@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>Prateek's Portfolio</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@1,300&display=swap"
+            rel="stylesheet">
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+                /* Add box-sizing for better layout control */
+            }
+
+            body {
+                background: linear-gradient(to bottom, #2b1a2f, #030637);
+                color: white;
+                font-family: 'Poppins', sans-serif;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 80px;
+                background-color: #1a0f1f;
+                /* This is a darker shade of violet */
+                border-radius: 25px;
+                transition: background-color 0.3s ease;
+                /* Add transition for smooth color change */
+            }
+
+            nav:hover {
+                background-color: #3d2b4f;
+                /* Lighter tone of purple on hover */
+            }
+
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding: 0;
+            }
+
+            nav ul li {
+                display: inline;
+            }
+
+            nav ul li a {
+                text-decoration: none;
+                color: white;
+                /* Change color to white for better visibility */
+                font-size: 1rem;
+                /* Adjust font size for better readability */
+                padding: 10px 20px;
+                /* Add padding for spacing */
+            }
+
+            nav ul li a:hover {
+                color: rgb(141, 141, 227);
+                /* Change color on hover */
+                font-size: 1.04rem;
+            }
+
+
+            .left {
+                font-size: 1.5rem;
+            }
+
+            .firstSection {
+                display: flex;
+                justify-content: space-around;
+                margin: 120px 0;
+            }
+
+            .firstSection>div {
+                width: 30%;
+            }
+
+            .leftSection {
+                font-size: 3rem;
+            }
+
+            .rightSection img {
+                width: 80%;
+            }
+
+            .rightSection img {
+                width: 80%;
+                transition: transform 0.3s ease;
+                /* Add transition for smooth scaling */
+            }
+
+            .rightSection img:hover {
+                transform: scale(1.2);
+                /* Scale the image to 1.2 times its original size on hover */
+            }
+
+            .purple {
+                color: blueviolet;
+            }
+
+            #element {
+                color: blueviolet;
+            }
+
+            .secondSection {
+                margin: auto;
+                max-width: 80vw;
+                height: 80vh;
+            }
+
+            main hr {
+                border: 0;
+                background: #9c97f1;
+                height: 1.2px;
+                margin: 40px 84px;
+            }
+
+            .secondSection h1 {
+                font-size: 1.9rem;
+            }
+
+            .text-gray {
+                color: gray
+            }
+
+            .secondSection .box {
+                width: 20vw;
+                height: 0;
+                margin: 56px 0;
+                border-top: 2px dashed white; /* Change border style to dashed */
+                display: flex;
+            }
+            
+
+            .secondSection .vertical {
+                height: 93px;
+                width: 1px;
+                background-color: white;
+                margin: 0 100px;
+            }
+
+            .top-image {
+                width: 23px;
+                position: relative;
+                top: -32px;
+                left: -9px;
+                border-radius: 50px;
+            }
+
+            .vertical-title {
+                position: relative;
+                top: 75px;
+                width: 150px;
+            }
+
+            .vertical-desc {
+                position: relative;
+                top: 86px;
+                color: gray;
+                width: 150px;
+                font-size: 9px;
+            }
+
+            .starting-mark {
+                position: relative;
+                width: 50px;
+                height: 50px;
+                margin: -25px 0 -10px 0;
+                padding: 0;
+                border-radius: 100px;
+            }
+
+            .top-image,
+            .starting-mark {
+                transition: transform 0.3s ease;
+                /* Add transition for smooth scaling */
+            }
+
+            .top-image:hover,
+            .starting-mark:hover {
+                transform: scale(2);
+                /* Scale the image to 2 times its original size on hover */
+            }
+
+            .ending-mark img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50px;
+                position: relative;
+                left: 50px;
+                bottom: 25px;
+                transition: transform 0.3s ease; /* Add transition for smooth scaling */
+            }
+            
+            .ending-mark img:hover {
+                transform: scale(2); /* Scale the image to 2 times its original size on hover */
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <div class="left">Prateek's Portfolio</div>
+                <div class="right">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/">About</a></li>
+                        <li><a href="/">Services</a></li>
+                        <li><a href="/">Projects</a></li>
+                        <li><a href="/">Contact Me</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <section class="firstSection">
+                <div class="leftSection">
+                    Hello There! My name is <span class="purple">Prateek</span>
+                    <div>
+                        and I am a passionate
+                    </div>
+                    <div>
+                        <span id="element"></span>
+                    </div>
+                </div>
+
+                <div class="rightSection">
+                    <img src="images\prateek.png" alt="">
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <span class="text-gray">What I have done so far</span>
+                <h1>Work Experience</h1>
+                <div class="box">
+                    <img src="images\laptop.jpg" alt="laptop-picture" class="starting-mark">
+                    <div class="vertical">
+                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <div class="vertical-title">AIML Lead @GDSC-LNCT(Oct-2023 - Present)</div>
+                        <div class="vertical-desc">Accomplished Python practitioner with expertise in implementing
+                            intricate ML models and deploying advanced data visualization techniques. Adept at
+                            conducting in-depth Exploratory Data Analysis (EDA) to extract precise insights. Specialized
+                            in transforming raw data into actionable intelligence through meticulous analysis.</div>
+                    </div>
+                    
+                    <div class="ending-mark">
+                        <img src="images\plus.jpeg" alt="plus-sign">
+                    </div>
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <span class="text-gray">Where did I gain my knowledge</span>
+                <h1>Education</h1>
+                <div class="box" style="width: 60vw;">
+                    <img src="images\education.png" alt="education-picture" class="starting-mark">
+                    <div class="vertical">
+                        <img src="images\school.png" alt="school-logo" class="top-image">
+                        <div class="vertical-title">St. Xavier's School, Khambalia <div>
+                            (2008-2009)
+                        </div></div>
+                        <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="vertical">
+                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <div class="vertical-title">Aditya Birla Public School, Kharia Khangar <div>
+                            (2010-2015)
+                        </div></div>
+                        <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="vertical">
+                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <div class="vertical-title">St. Michael's Hr. Sec. School, Satna <div>
+                            (2015 - 2020)
+                        </div></div>
+                        <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    <div class="vertical">
+                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <div class="vertical-title">Lakshmi Narain College of Technology, Bhopal <div>
+                            (2021 - Present)
+                        </div></div>
+                        <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
+                    </div>
+                    
+                    <!-- <div class="ending-mark">
+                        <img src="images\plus.jpeg" alt="plus-sign">
+                    </div> -->
+                </div>
+            </section>
+
+        </main>
+        <footer>
+
+        </footer>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script>
+            var typed = new Typed('#element', {
+                strings: ['Web Developer', 'Data Scientist', 'Python Developer'],
+                typeSpeed: 50,
+            });
+        </script>
+    </body>
+
+</html>
