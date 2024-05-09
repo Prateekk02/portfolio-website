@@ -18,7 +18,7 @@
             }
 
             body {
-                background: linear-gradient(to bottom, #2b1a2f, #030637);
+                background: linear-gradient(to bottom, #09000b, #030637);
                 color: white;
                 font-family: 'Poppins', sans-serif;
             }
@@ -115,11 +115,15 @@
             }
 
             main hr {
-                border: 0;
-                background: #9c97f1;
-                height: 1.2px;
+                border: none;
+                /* Remove border */
+                background: linear-gradient(to right, #090632, #0d4281, #1c86c0, #7fdff3, #d3f8e2, #7fdff3, #1c86c0, #0d4281, #090632);
+                /* Apply linear gradient */
+                height: 7.2px;
                 margin: 40px 84px;
+                border-radius: 50px;
             }
+
 
             .secondSection h1 {
                 font-size: 1.9rem;
@@ -133,10 +137,11 @@
                 width: 20vw;
                 height: 0;
                 margin: 56px 0;
-                border-top: 2px dashed white; /* Change border style to dashed */
+                border-top: 2px dashed white;
+                /* Change border style to dashed */
                 display: flex;
             }
-            
+
 
             .secondSection .vertical {
                 height: 93px;
@@ -195,13 +200,69 @@
                 position: relative;
                 left: 50px;
                 bottom: 25px;
-                transition: transform 0.3s ease; /* Add transition for smooth scaling */
+                transition: transform 0.3s ease;
+                /* Add transition for smooth scaling */
             }
-            
+
             .ending-mark img:hover {
-                transform: scale(2); /* Scale the image to 2 times its original size on hover */
+                transform: scale(2);
+                /* Scale the image to 2 times its original size on hover */
             }
-            
+
+
+            .skill-class h2 {
+                background-color: #030637
+            }
+
+            .skill-logo {
+                width: 50px;
+                height: auto;
+                border-radius: 30px;
+                margin: 0 7px;
+                transition: transform 0.3s ease;
+                /* Add transition for smooth effect */
+            }
+
+            .skill-logo:hover {
+                transform: translateY(-5px) scale(2);
+                /* Move image up by 5 pixels, scale it up by 4 times, and rotate it on Y-axis by 180 degrees on hover */
+            }
+
+            .skill-arsenal {
+                display: flex;
+                justify-content: space-around;
+            }
+
+            .skill-class {
+                display: flex;
+                justify-content: center;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                padding: 15px;
+                margin: 20px;
+                transition: transform 0.3s ease;
+                /* Add transition for smooth effect */
+            }
+
+            .skill-class:hover {
+                transform: translateY(-5px) scale(1.1);
+                /* Move text up by 5 pixels and scale up by 10% on hover */
+            }
+
+            .skill-name {
+
+                font-size: 18px;
+
+                margin-top: 10px;
+
+            }
+
+            .skill-arsenal-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 10px;
+
+            }
         </style>
     </head>
 
@@ -250,7 +311,7 @@
                             conducting in-depth Exploratory Data Analysis (EDA) to extract precise insights. Specialized
                             in transforming raw data into actionable intelligence through meticulous analysis.</div>
                     </div>
-                    
+
                     <div class="ending-mark">
                         <img src="images\plus.jpeg" alt="plus-sign">
                     </div>
@@ -260,40 +321,180 @@
             <section class="secondSection">
                 <span class="text-gray">Where did I gain my knowledge</span>
                 <h1>Education</h1>
-                <div class="box" style="width: 60vw;">
+                <div class="box" style="width: 55vw;">
                     <img src="images\education.png" alt="education-picture" class="starting-mark">
                     <div class="vertical">
                         <img src="images\school.png" alt="school-logo" class="top-image">
                         <div class="vertical-title">St. Xavier's School, Khambalia <div>
-                            (2008-2009)
-                        </div></div>
+                                (2008-2009)
+                            </div>
+                        </div>
                         <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
                     </div>
                     <div class="vertical">
-                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <img src="images\abps.jpeg" alt="abps-logo" class="top-image">
                         <div class="vertical-title">Aditya Birla Public School, Kharia Khangar <div>
-                            (2010-2015)
-                        </div></div>
+                                (2010-2015)
+                            </div>
+                        </div>
                         <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
                     </div>
                     <div class="vertical">
-                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <img src="images\st-michael.jpeg" alt="st. michael's logo" class="top-image">
                         <div class="vertical-title">St. Michael's Hr. Sec. School, Satna <div>
-                            (2015 - 2020)
-                        </div></div>
+                                (2015 - 2020)
+                            </div>
+                        </div>
                         <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
                     </div>
                     <div class="vertical">
-                        <img src="images\gdsc-logo.webp" alt="GDSC-logo" class="top-image">
+                        <img src="images\lnct.jpeg" alt="lnct-logo" class="top-image">
                         <div class="vertical-title">Lakshmi Narain College of Technology, Bhopal <div>
-                            (2021 - Present)
-                        </div></div>
+                                (2021 - Present)
+                            </div>
+                        </div>
                         <div class="vertical-desc">Lorem ipsum dolor sit amet.</div>
                     </div>
-                    
+
                     <!-- <div class="ending-mark">
                         <img src="images\plus.jpeg" alt="plus-sign">
                     </div> -->
+                </div>
+            </section>
+            <hr>
+            <section class="secondSection">
+                <span class="text-gray">My Arsenal</span>
+                <h1>Skills</h1>
+
+                
+                <div class="skill-box">
+                    <div class="skill-container">
+                        <div class="skill-class">
+                            <h2>Frontend</h2>
+                        </div>
+                        <div class="skill-arsenal">
+                            <div class="skill-arsenal-container">
+                                <img src="images\html.webp" alt="html-logo" class="skill-logo">
+                                <div class="skill-name">HTML</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\css.png" alt="css-logo" class="skill-logo">
+                                <div class="skill-name">CSS</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\javascript.jpg" alt="javascript-logo" class="skill-logo">
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\react.png" alt="react-logo" class="skill-logo">
+                                <div class="skill-name">ReactJs</div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="skill-container">
+                        <div class="skill-class">
+                            <h2>Backend</h2>
+                        </div>
+                        <div class="skill-arsenal">
+                            <div class="skill-arsenal-container">
+                                <img src="images\nodejs.png" alt="nodejs-logo" class="skill-logo">
+                                <div class="skill-name">Nodejs</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\django.png" alt="django-logo" class="skill-logo">
+                                <div class="skill-name">Django</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\expressjs.png" alt="expressjs" class="skill-logo">
+                                <div class="skill-name">Expressjs</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\flask.png" alt="flask" class="skill-logo">
+                                <div class="skill-name">Flask</div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="skill-container">
+                        <div class="skill-class">
+                            <h2>Database</h2>
+                        </div>
+                        <div class="skill-arsenal">
+                            <div class="skill-arsenal-container">
+                                <img src="images\mongodb.jpeg" alt="mongoDB-logo" class="skill-logo">
+                                <div class="skill-name">MongoDB</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\mysql.png" alt="mysql-logo" class="skill-logo">
+                                <div class="skill-name">MySQL</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\sqlite.jpeg" alt="sqlite-logo" class="skill-logo">
+                                <div class="skill-name">SQLite</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\postgresql.png" alt="postgresql-logo" class="skill-logo">
+                                <div class="skill-name">PostgreSQL</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>                  
+
+                    <div class="skill-container">
+                        <div class="skill-class">
+                            <h2>Data Science</h2>
+                        </div>
+                        <div class="skill-arsenal">
+                            <div class="skill-arsenal-container">
+                                <img src="images\html.webp" alt="html-logo" class="skill-logo">
+                                <div class="skill-name">HTML</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\css.png" alt="css-logo" class="skill-logo">
+                                <div class="skill-name">CSS</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\javascript.jpg" alt="javascript-logo" class="skill-logo">
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\react.png" alt="react-logo" class="skill-logo">
+                                <div class="skill-name">ReactJs</div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="skill-container">
+                        <div class="skill-class">
+                            <h2>Frontend</h2>
+                        </div>
+                        <div class="skill-arsenal">
+                            <div class="skill-arsenal-container">
+                                <img src="images\html.webp" alt="html-logo" class="skill-logo">
+                                <div class="skill-name">HTML</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\css.png" alt="css-logo" class="skill-logo">
+                                <div class="skill-name">CSS</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\javascript.jpg" alt="javascript-logo" class="skill-logo">
+                                <div class="skill-name">JavaScript</div>
+                            </div>
+                            <div class="skill-arsenal-container">
+                                <img src="images\react.png" alt="react-logo" class="skill-logo">
+                                <div class="skill-name">ReactJs</div>
+                            </div>
+
+                        </div>
+                    </div>
+
                 </div>
             </section>
 
@@ -306,6 +507,7 @@
             var typed = new Typed('#element', {
                 strings: ['Web Developer', 'Data Scientist', 'Python Developer'],
                 typeSpeed: 50,
+                loop: true
             });
         </script>
     </body>
