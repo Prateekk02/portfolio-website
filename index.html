@@ -15,12 +15,15 @@
                 padding: 0;
                 box-sizing: border-box;
                 /* Add box-sizing for better layout control */
+
             }
 
             body {
-                background: linear-gradient(to bottom, #09000b, #030637);
+                background: linear-gradient(to bottom, #09000b, #27064b);
                 color: white;
                 font-family: 'Poppins', sans-serif;
+                height: auto;
+
             }
 
             nav {
@@ -111,7 +114,7 @@
             .secondSection {
                 margin: auto;
                 max-width: 80vw;
-                height: 80vh;
+                height: 60vh;
             }
 
             main hr {
@@ -209,11 +212,6 @@
                 /* Scale the image to 2 times its original size on hover */
             }
 
-
-            .skill-class h2 {
-                background-color: #030637
-            }
-
             .skill-logo {
                 width: 50px;
                 height: auto;
@@ -228,26 +226,6 @@
                 /* Move image up by 5 pixels, scale it up by 4 times, and rotate it on Y-axis by 180 degrees on hover */
             }
 
-            .skill-arsenal {
-                display: flex;
-                justify-content: space-around;
-            }
-
-            .skill-class {
-                display: flex;
-                justify-content: center;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                padding: 15px;
-                margin: 20px;
-                transition: transform 0.3s ease;
-                /* Add transition for smooth effect */
-            }
-
-            .skill-class:hover {
-                transform: translateY(-5px) scale(1.1);
-                /* Move text up by 5 pixels and scale up by 10% on hover */
-            }
-
             .skill-name {
 
                 font-size: 18px;
@@ -255,13 +233,14 @@
                 margin-top: 10px;
 
             }
-
-            .skill-arsenal-container {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                gap: 10px;
-
+            .skill-container {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+                grid-gap: 20px;
+            }
+            
+            .skill-sub-container {
+                text-align: center; /* Center the content horizontally */
             }
         </style>
     </head>
@@ -366,182 +345,106 @@
                 <span class="text-gray">My Arsenal</span>
                 <h1>Skills</h1>
 
+                <div class="skill-container">
 
-                <div class="skill-box">
-                    <div class="skill-container">
-                        <div class="skill-class">
-                            <h2>Frontend</h2>
-                        </div>
-                        <div class="skill-arsenal">
-                            <div class="skill-arsenal-container">
-                                <img src="images\html.webp" alt="html-logo" class="skill-logo">
-                                <div class="skill-name">HTML</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\css.png" alt="css-logo" class="skill-logo">
-                                <div class="skill-name">CSS</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\javascript.jpg" alt="javascript-logo" class="skill-logo">
-                                <div class="skill-name">JavaScript</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\react.png" alt="react-logo" class="skill-logo">
-                                <div class="skill-name">ReactJs</div>
-                            </div>
 
-                        </div>
+                    <div class="skill-sub-container">
+                        <img src="images\html.webp" alt="html-logo" class="skill-logo">
+                        <div class="skill-name">HTML</div>
                     </div>
-                    <hr>
-                    <div class="skill-container">
-                        <div class="skill-class">
-                            <h2>Backend</h2>
-                        </div>
-                        <div class="skill-arsenal">
-                            <div class="skill-arsenal-container">
-                                <img src="images\nodejs.png" alt="nodejs-logo" class="skill-logo">
-                                <div class="skill-name">Nodejs</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\django.png" alt="django-logo" class="skill-logo">
-                                <div class="skill-name">Django</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\expressjs.png" alt="expressjs" class="skill-logo">
-                                <div class="skill-name">Expressjs</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\flask.png" alt="flask" class="skill-logo">
-                                <div class="skill-name">Flask</div>
-                            </div>
-
-
-                        </div>
+                    <div class="skill-sub-container">
+                        <img src="images\css.png" alt="css-logo" class="skill-logo">
+                        <div class="skill-name">CSS</div>
                     </div>
-                    <hr>
-                    <div class="skill-container">
-                        <div class="skill-class">
-                            <h2>Database</h2>
-                        </div>
-                        <div class="skill-arsenal">
-                            <div class="skill-arsenal-container">
-                                <img src="images\mongodb.jpeg" alt="mongoDB-logo" class="skill-logo">
-                                <div class="skill-name">MongoDB</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\mysql.png" alt="mysql-logo" class="skill-logo">
-                                <div class="skill-name">MySQL</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\sqlite.jpeg" alt="sqlite-logo" class="skill-logo">
-                                <div class="skill-name">SQLite</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\postgresql.png" alt="postgresql-logo" class="skill-logo">
-                                <div class="skill-name">PostgreSQL</div>
-                            </div>
-
-                        </div>
+                    <div class="skill-sub-container">
+                        <img src="images\javascript.jpg" alt="javascript-logo" class="skill-logo">
+                        <div class="skill-name">JavaScript</div>
                     </div>
-                    <hr>
-
-                    <div class="skill-container">
-                        <div class="skill-class">
-                            <h2>Data Science</h2>
-                        </div>
-                        <div class="skill-arsenal">
-                            <div class="skill-arsenal-container">
-                                <img src="images\datamanipulation.png" alt="data-manipulation-logo" class="skill-logo">
-                                <div class="skill-name">Data Manipulation
-                                </div>
-                                <div id="html-subskills" class="subskills">
-                                    <ul>
-                                        <li><img src="" alt="Pandas logo"> Pandas</li>
-                                        <li><img src="" alt="Numpy logo"> Numpy</li>
-                                        <li><img src="" alt="SciPy logo"> SciPy</li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\datacleaning.png" alt="data-cleaning-logo" class="skill-logo">
-                                <div class="skill-name">Maths and Data Cleaning</div>
-                                <div id="html-subskills" class="subskills">
-                                    <ul>
-                                        <li><img src="" alt="EDA logo"> EDA</li>
-                                        <li><img src="" alt="Inferencial Statistics logo"> Inferencial Statistics</li>
-                                        <li><img src="" alt="Probability logo"> Probability</li>                                        
-                                        <li><img src="" alt="Calculus logo"> Calculus</li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\datavisualization.png" alt="data-visualization-logo" class="skill-logo">
-                                <div class="skill-name">Data Visualization</div>
-                                <div id="html-subskills" class="subskills">
-                                    <ul>
-                                        <li><img src="" alt="Matplotlib logo"> Matplotlib</li>
-                                        <li><img src="" alt="Seaborn logo"> Seaborn</li>
-                                        <li><img src="" alt=" Plotly logo"> Plotly</li>                                        
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\ml.jpeg" alt="ml-logo" class="skill-logo">
-                                <div class="skill-name">Machine Learning</div>
-                                <div id="html-subskills" class="subskills">
-                                    <ul>
-                                        <li><img src="" alt="Supervised Learning logo"> Supervised Learning</li>                                        
-                                        <li><img src="" alt="Ensemble Learning logo"> Ensemble Learning</li>  
-                                        <li><img src="" alt="Scikit Learn logo"> Scikit Learn</li>                                      
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\nlp.png" alt="nlp-logo" class="skill-logo">
-                                <div class="skill-name">NLP</div>
-                                <div id="html-subskills" class="subskills">
-                                    <ul>
-                                        <li><img src="" alt="Spacy logo"> Spacy</li>
-                                        <li><img src="" alt="Nlp Pipelining logo"> Nlp Pipelining</li>
-                                                                              
-                                    </ul>
-                                </div>
-                            </div>
-
-                        </div>
+                    <div class="skill-sub-container">
+                        <img src="images\react.png" alt="react-logo" class="skill-logo">
+                        <div class="skill-name">ReactJs</div>
                     </div>
-                    <hr>
-                    <div class="skill-container">
-                        <div class="skill-class">
-                            <h2>Frontend</h2>
-                        </div>
-                        <div class="skill-arsenal">
-                            <div class="skill-arsenal-container">
-                                <img src="images\html.webp" alt="html-logo" class="skill-logo">
-                                <div class="skill-name">HTML</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\css.png" alt="css-logo" class="skill-logo">
-                                <div class="skill-name">CSS</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\javascript.jpg" alt="javascript-logo" class="skill-logo">
-                                <div class="skill-name">JavaScript</div>
-                            </div>
-                            <div class="skill-arsenal-container">
-                                <img src="images\react.png" alt="react-logo" class="skill-logo">
-                                <div class="skill-name">ReactJs</div>
-                            </div>
-
-                        </div>
+                    <div class="skill-sub-container">
+                        <img src="images\nodejs.png" alt="nodejs-logo" class="skill-logo">
+                        <div class="skill-name">Nodejs</div>
                     </div>
-
+                    <div class="skill-sub-container">
+                        <img src="images\django.png" alt="django-logo" class="skill-logo">
+                        <div class="skill-name">Django</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\expressjs.png" alt="expressjs" class="skill-logo">
+                        <div class="skill-name">Expressjs</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\flask.png" alt="flask" class="skill-logo">
+                        <div class="skill-name">Flask</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\mongodb.jpeg" alt="mongoDB-logo" class="skill-logo">
+                        <div class="skill-name">MongoDB</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\mysql.png" alt="mysql-logo" class="skill-logo">
+                        <div class="skill-name">MySQL</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\sqlite.jpeg" alt="sqlite-logo" class="skill-logo">
+                        <div class="skill-name">SQLite</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\postgresql.png" alt="postgresql-logo" class="skill-logo">
+                        <div class="skill-name">PostgreSQL</div>
+                    </div>
+                    <div class="skill-sub-container">
+                        <img src="images\oop.png" alt="oops-concept-logo" class="skill-logo">
+                        <div class="skill-name">OOP</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\os.png" alt="os-logo" class="skill-logo">
+                        <div class="skill-name">Operating System</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\dbms.jpeg" alt="dbms-logo" class="skill-logo">
+                        <div class="skill-name">DBMS</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\pandas.jpeg" alt="pandas-logo" class="skill-logo">
+                        <div class="skill-name">Pandas</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\numpy.png" alt="numpy-logo" class="skill-logo">
+                        <div class="skill-name">Numpy</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\matplotlib.png" alt="matplotlib-logo" class="skill-logo">
+                        <div class="skill-name">Matplotlib</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\seaborn.png" alt="seaborn-logo" class="skill-logo">
+                        <div class="skill-name">Seaborn</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\ml.jpeg" alt="ml-logo" class="skill-logo">
+                        <div class="skill-name">Machine Learning</div>
+                    </div>
+                    <div class="skill-sub-container"><img src="images\nlp.png" alt="nlp-logo" class="skill-logo">
+                        <div class="skill-name">NLP</div>
+                    </div>
                 </div>
             </section>
+        <hr>
+
+        <section class="secondSection">
+            <span class="text-gray">My Accomplishments so far</span>
+            <h1>Achievements</h1>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+
 
         </main>
         <footer>
-
+            <h3>This is footer............</h3>
         </footer>
         <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
         <script>
@@ -551,6 +454,7 @@
                 loop: true
             });
         </script>
+
     </body>
 
 </html>
