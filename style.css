@@ -3,12 +3,14 @@
     padding: 0;
     box-sizing: border-box;
     /* Add box-sizing for better layout control */
+
 }
 
 body {
-    background: linear-gradient(to bottom, #09000b, #030637);
+    background: linear-gradient(to bottom, #000009, #130416, #06003b);
     color: white;
     font-family: 'Poppins', sans-serif;
+    height: auto;
 }
 
 nav {
@@ -16,17 +18,17 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background-color: #1a0f1f;
-    /* This is a darker shade of violet */
-    border-radius: 25px;
-    transition: background-color 0.3s ease;
-    /* Add transition for smooth color change */
+    background: linear-gradient(to bottom, rgba(39, 27, 70, 0.54), rgb(0, 0, 0)); /* Futuristic gradient mix of black and blue */
+    border-radius: 15px; /* Adjusted border-radius */
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1); /* Add a subtle glow effect */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for color and box-shadow */
 }
 
 nav:hover {
-    background-color: #3d2b4f;
-    /* Lighter tone of purple on hover */
+    background: linear-gradient(to bottom, #02061a, #0a0d24); /* Futuristic gradient mix of blue and dark violet on hover */
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3); /* Slightly stronger glow effect on hover */
 }
+
 
 nav ul {
     list-style: none;
@@ -99,12 +101,14 @@ nav ul li a:hover {
 .secondSection {
     margin: auto;
     max-width: 80vw;
-    height: 80vh;
+    height: 60vh;
 }
 
-main hr {
-    border: none; /* Remove border */
-    background: linear-gradient(to right, #090632, #0d4281, #1c86c0, #7fdff3, #d3f8e2, #7fdff3, #1c86c0, #0d4281, #090632); /* Apply linear gradient */
+main hr{
+    border: none;
+    /* Remove border */
+    background: linear-gradient(to right, #090632, #0d4281, #1c86c0, #7fdff3, #d3f8e2, #7fdff3, #1c86c0, #0d4281, #090632);
+    /* Apply linear gradient */
     height: 7.2px;
     margin: 40px 84px;
     border-radius: 50px;
@@ -120,10 +124,11 @@ main hr {
 }
 
 .secondSection .box {
-    width: 20vw;
+    width: 9.8vw;
     height: 0;
     margin: 56px 0;
-    border-top: 2px dashed white; /* Change border style to dashed */
+    border-top: 2px solid;
+    /* Change border style to dashed */
     display: flex;
 }
 
@@ -174,7 +179,7 @@ main hr {
 
 .top-image:hover,
 .starting-mark:hover {
-    transform: scale(2);
+    transform: scale(3);
     /* Scale the image to 2 times its original size on hover */
 }
 
@@ -185,19 +190,258 @@ main hr {
     position: relative;
     left: 50px;
     bottom: 25px;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
+    /* Add transition for smooth scaling */
 }
 
 .ending-mark img:hover {
-    transform: scale(2); /* Scale the image to 2 times its original size on hover */
+    transform: scale(2);
+    /* Scale the image to 2 times its original size on hover */
 }
 
-
-.skill-container h2{
-    background-color: #030637
+.skill-logo {
+    width: 50px;
+    height: auto;
+    border-radius: 30px;
+    margin: 0 7px;
+    transition: transform 0.3s ease;
+    /* Add transition for smooth effect */
 }
-.skill-logo{
-    height: 30px;
+
+.skill-logo:hover {
+    transform: translateY(-5px) scale(2);
+    /* Move image up by 5 pixels, scale it up by 4 times, and rotate it on Y-axis by 180 degrees on hover */
+}
+
+.skill-name {
+
+    font-size: 18px;
+
+    margin-top: 10px;
+
+}
+.skill-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-gap: 20px;
+}
+
+.skill-sub-container {
+    text-align: center; /* Center the content horizontally */
+}
+.achievement li{
+    padding: 4px;
+    margin: 4px;
+    color: linear-gradient(to right, #001f3f, #ffffff);                          
+    
+}
+
+footer {
+    background: linear-gradient(rgb(1 0 4), #2a0130, rgb(2 2 67)); /* Futuristic gradient mix of dark purple and neon green */
+    color: white;
+    text-align: center;
+    padding: 40px 0;
+    border-radius: 25px;
+}
+
+.footer-container {
+    max-width: 80vw;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Changed to space-between to separate footer info and links */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.footer-info {
+    flex-basis: 100%; /* Full width on smaller screens */
+    text-align: left; /* Align contact information to the left */
+}
+
+.social-links {
+    flex-basis: calc(50% - 10px); /* 50% width with 10px spacing between */
+    text-align: right; /* Align social links to the right */
+}
+
+.social-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Remove default margin */
+}
+
+.social-links ul li {
+    margin-bottom: 10px;
+}
+
+.social-links ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: block; /* Make links block level */
+}
+
+.social-links ul li a:hover {
+    color: #09a9ff;
+}
+
+.social-links h3 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.social-links ul {
+    display: flex; /* Display social links horizontally */
+    justify-content: flex-end; /* Align social links to the right */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.social-links ul li {
+    margin-right: 10px; /* Add spacing between social icons */
+}
+
+.social-logo {
     width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+}
+
+.social-logo:hover {
+    transform: scale(2) translateY(-5px); /* Scale up by 2 times and move up by 5px */
+}
+
+
+.upperSection,
+.lowerSection {
+    flex: 1;
+    margin-bottom: 20px;
+}
+
+.about-section {
+    margin: 80px auto;
+    max-width: 800px;
+    text-align: center;
+}
+
+.about-section h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #ffffff;
+    
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-image {
+    margin-right: 20px;
+}
+
+.about-image img {
+    width: 200px;
+    border-radius: 50%;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+
+
+.services-section {
+    padding: 50px;
+}
+.services-section h2{
+    padding: 4px;
+    margin: 4px;
+    gap: 5px;
+}
+
+.service {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.service-icon {
+    margin-right: 20px;
+}
+
+.service-icon img {
+    width: 40px;
+    height: 40px;
     border-radius: 30px;
 }
+
+.service-info h3 {
+    margin-top: 0;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 100%; /* Position the dropdown below the parent */
+    left: 0; /* Align the left edge of the dropdown with the left edge of the parent */
+    background: linear-gradient(to bottom, #08001a,#360041, #000000); /* Gradient from violet to blue */
+    border-radius: 10px;
+}
+
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 10px;
+    
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+  
