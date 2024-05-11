@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Add box-sizing for better layout control */
-
 }
 
 body {
@@ -18,17 +16,16 @@ nav {
     justify-content: space-around;
     align-items: center;
     height: 80px;
-    background: linear-gradient(to bottom, rgba(39, 27, 70, 0.54), rgb(0, 0, 0)); /* Futuristic gradient mix of black and blue */
-    border-radius: 15px; /* Adjusted border-radius */
-    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1); /* Add a subtle glow effect */
-    transition: background-color 0.3s ease, box-shadow 0.3s ease; /* Transition for color and box-shadow */
+    background: linear-gradient(to bottom, rgba(39, 27, 70, 0.54), rgb(0, 0, 0));
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 nav:hover {
-    background: linear-gradient(to bottom, #02061a, #0a0d24); /* Futuristic gradient mix of blue and dark violet on hover */
-    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3); /* Slightly stronger glow effect on hover */
+    background: linear-gradient(to bottom, #02061a, #0a0d24);
+    box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.3);
 }
-
 
 nav ul {
     list-style: none;
@@ -43,19 +40,14 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: white;
-    /* Change color to white for better visibility */
     font-size: 1rem;
-    /* Adjust font size for better readability */
     padding: 10px 20px;
-    /* Add padding for spacing */
 }
 
 nav ul li a:hover {
     color: rgb(141, 141, 227);
-    /* Change color on hover */
     font-size: 1.04rem;
 }
-
 
 .left {
     font-size: 1.5rem;
@@ -77,17 +69,11 @@ nav ul li a:hover {
 
 .rightSection img {
     width: 80%;
-}
-
-.rightSection img {
-    width: 80%;
     transition: transform 0.3s ease;
-    /* Add transition for smooth scaling */
 }
 
 .rightSection img:hover {
     transform: scale(1.2);
-    /* Scale the image to 1.2 times its original size on hover */
 }
 
 .purple {
@@ -106,14 +92,11 @@ nav ul li a:hover {
 
 main hr{
     border: none;
-    /* Remove border */
     background: linear-gradient(to right, #090632, #0d4281, #1c86c0, #7fdff3, #d3f8e2, #7fdff3, #1c86c0, #0d4281, #090632);
-    /* Apply linear gradient */
     height: 7.2px;
     margin: 40px 84px;
     border-radius: 50px;
 }
-
 
 .secondSection h1 {
     font-size: 1.9rem;
@@ -128,10 +111,8 @@ main hr{
     height: 0;
     margin: 56px 0;
     border-top: 2px solid;
-    /* Change border style to dashed */
     display: flex;
 }
-
 
 .secondSection .vertical {
     height: 93px;
@@ -174,13 +155,11 @@ main hr{
 .top-image,
 .starting-mark {
     transition: transform 0.3s ease;
-    /* Add transition for smooth scaling */
 }
 
 .top-image:hover,
 .starting-mark:hover {
     transform: scale(3);
-    /* Scale the image to 2 times its original size on hover */
 }
 
 .ending-mark img {
@@ -191,12 +170,10 @@ main hr{
     left: 50px;
     bottom: 25px;
     transition: transform 0.3s ease;
-    /* Add transition for smooth scaling */
 }
 
 .ending-mark img:hover {
     transform: scale(2);
-    /* Scale the image to 2 times its original size on hover */
 }
 
 .skill-logo {
@@ -205,21 +182,17 @@ main hr{
     border-radius: 30px;
     margin: 0 7px;
     transition: transform 0.3s ease;
-    /* Add transition for smooth effect */
 }
 
 .skill-logo:hover {
     transform: translateY(-5px) scale(2);
-    /* Move image up by 5 pixels, scale it up by 4 times, and rotate it on Y-axis by 180 degrees on hover */
 }
 
 .skill-name {
-
     font-size: 18px;
-
     margin-top: 10px;
-
 }
+
 .skill-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -227,17 +200,17 @@ main hr{
 }
 
 .skill-sub-container {
-    text-align: center; /* Center the content horizontally */
+    text-align: center;
 }
-.achievement li{
+
+.achievement li {
     padding: 4px;
     margin: 4px;
     color: linear-gradient(to right, #001f3f, #ffffff);                          
-    
 }
 
 footer {
-    background: linear-gradient(rgb(1 0 4), #2a0130, rgb(2 2 67)); /* Futuristic gradient mix of dark purple and neon green */
+    background: linear-gradient(rgb(1 0 4), #2a0130, rgb(2 2 67));
     color: white;
     text-align: center;
     padding: 40px 0;
@@ -248,24 +221,24 @@ footer {
     max-width: 80vw;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between; /* Changed to space-between to separate footer info and links */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer-info {
-    flex-basis: 100%; /* Full width on smaller screens */
-    text-align: left; /* Align contact information to the left */
+    flex-basis: 100%;
+    text-align: left;
 }
 
 .social-links {
-    flex-basis: calc(50% - 10px); /* 50% width with 10px spacing between */
-    text-align: right; /* Align social links to the right */
+    flex-basis: calc(50% - 10px);
+    text-align: right;
 }
 
 .social-links ul {
     list-style: none;
     padding: 0;
-    margin: 0; /* Remove default margin */
+    margin: 0;
 }
 
 .social-links ul li {
@@ -276,7 +249,7 @@ footer {
     color: white;
     text-decoration: none;
     transition: color 0.3s ease;
-    display: block; /* Make links block level */
+    display: block;
 }
 
 .social-links ul li a:hover {
@@ -289,26 +262,25 @@ footer {
 }
 
 .social-links ul {
-    display: flex; /* Display social links horizontally */
-    justify-content: flex-end; /* Align social links to the right */
-    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
 }
 
 .social-links ul li {
-    margin-right: 10px; /* Add spacing between social icons */
+    margin-right: 10px;
 }
 
 .social-logo {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    transition: transform 0.3s ease; /* Add transition for smooth scaling */
+    transition: transform 0.3s ease;
 }
 
 .social-logo:hover {
-    transform: scale(2) translateY(-5px); /* Scale up by 2 times and move up by 5px */
+    transform: scale(2) translateY(-5px);
 }
-
 
 .upperSection,
 .lowerSection {
@@ -326,7 +298,6 @@ footer {
     font-size: 2rem;
     margin-bottom: 30px;
     color: #ffffff;
-    
 }
 
 .about-content {
@@ -355,12 +326,11 @@ footer {
     line-height: 1.6;
 }
 
-
-
 .services-section {
     padding: 50px;
 }
-.services-section h2{
+
+.services-section h2 {
     padding: 4px;
     margin: 4px;
     gap: 5px;
@@ -395,19 +365,19 @@ footer {
     background-color: inherit;
     font-family: inherit;
     margin: 0;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
     min-width: 160px;
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown {
+}
+
+/* Links inside the dropdown */
+.dropdown {
     position: relative;
 }
 
@@ -417,12 +387,11 @@ footer {
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-    top: 100%; /* Position the dropdown below the parent */
-    left: 0; /* Align the left edge of the dropdown with the left edge of the parent */
-    background: linear-gradient(to bottom, #08001a,#360041, #000000); /* Gradient from violet to blue */
+    top: 100%;
+    left: 0;
+    background: linear-gradient(to bottom, #08001a,#360041, #000000);
     border-radius: 10px;
 }
-
 
 .dropdown-content a {
     color: white;
@@ -430,7 +399,6 @@ footer {
     text-decoration: none;
     display: block;
     border-radius: 10px;
-    
 }
 
 /* Change color of dropdown links on hover */
@@ -443,5 +411,100 @@ footer {
     display: block;
 }
 
+@media only screen and (max-width: 768px) {
+    /* Adjustments for tablets and smaller screens */
+    .firstSection {
+        flex-direction: column;
+        align-items: center;
+    }
 
-  
+    .firstSection>div {
+        width: 80%;
+    }
+
+    .secondSection h1 {
+        font-size: 1.5rem;
+    }
+
+    .secondSection .box {
+        margin: 20px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    /* Adjustments for smaller screens */
+    nav ul li a {
+        padding: 8px 16px;
+    }
+
+    .firstSection {
+        margin: 80px 0;
+    }
+
+    .firstSection>div {
+        width: 90%;
+    }
+
+    .secondSection h1 {
+        font-size: 1.2rem;
+    }
+
+    .secondSection .box {
+        margin: 10px 0;
+    }
+
+    .vertical-title,
+    .vertical-desc {
+        display: none;
+    }
+
+    .top-image,
+    .starting-mark {
+        display: none;
+    }
+
+    .ending-mark img {
+        display: none;
+    }
+
+    .skill-logo {
+        width: 40px;
+    }
+
+    .skill-name {
+        font-size: 14px;
+    }
+
+    .social-links ul li a {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 20px 0;
+    }
+
+    .about-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-image img {
+        width: 150px;
+    }
+
+    .about-text p {
+        font-size: 1rem;
+    }
+
+    .services-section h2 {
+        font-size: 1.5rem;
+    }
+
+    .service-info h3 {
+        font-size: 1rem;
+    }
+
+    .service-icon img {
+        width: 30px;
+        height: 30px;
+    }
+}
